@@ -1,28 +1,11 @@
-
-<p align="center">
-  <a href="https://docs.anthropic.com/en/docs/claude-code"><img src="https://img.shields.io/badge/Claude_Code-CLI-D97757?logo=anthropic&logoColor=white" alt="Claude Code"></a>
-  <img src="https://img.shields.io/badge/Dev_Container-supported-2496ED?logo=docker&logoColor=white" alt="Dev Container">
-  <img src="https://img.shields.io/badge/base-node%3A24-339933?logo=nodedotjs&logoColor=white" alt="node:24">
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
-</p>
-
 在一個**有限制的 Docker 容器**裡執行 [Claude Code](https://docs.anthropic.com/en/docs/claude-code)，讓 AI Agent 可以在隔離環境中讀寫程式碼、執行指令，同時透過防火牆把對外連線限制在少數白名單網域，降低資料外洩與誤操作的風險。
 
 本專案改自 Anthropic 官方的 `.devcontainer` [參考實作](https://github.com/anthropics/claude-code/tree/main/.devcontainer)。
-
-## 影片教學
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=BPdyiaC-3Lw">
-    <img src="https://img.youtube.com/vi/BPdyiaC-3Lw/maxresdefault.jpg" alt="在 YouTube 觀看教學影片" width="720">
-  </a>
-</p>
 
 > 影片示範一套「讓 AI 放手做事、又不會失控」的完整流程：先把 Claude Code 關進沙箱，再解開權限限制、補上規格與存檔點，最後把成果部署上線。
 
 ## 目錄
 
-- [影片教學](#影片教學)
 - [目錄結構](#目錄結構)
 - [需求](#需求)
 - [快速開始](#快速開始)
@@ -125,10 +108,10 @@
 
 ### 目前安裝的 skills
 
-| Skill | 來源 | 用途 | 在這個容器裡 |
-| --- | --- | --- | --- |
-| `frontend-design` | anthropics/skills | UI 視覺方向、字體、版面，避免「AI 模板感」 | 純文件，直接可用 |
-| `git-smart-commit` | 本專案自訂 | 把雜亂變更拆成多個 conventional commit，與前端無關 | 純文件 |
+| Skill              | 來源              | 用途                                               | 在這個容器裡     |
+| ------------------ | ----------------- | -------------------------------------------------- | ---------------- |
+| `frontend-design`  | anthropics/skills | UI 視覺方向、字體、版面，避免「AI 模板感」         | 純文件，直接可用 |
+| `git-smart-commit` | 本專案自訂        | 把雜亂變更拆成多個 conventional commit，與前端無關 | 純文件           |
 
 ## 調整防火牆（開放更多網域）
 
